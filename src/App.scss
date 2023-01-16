@@ -1,0 +1,36 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "sidebar main" "sidebar footer";
+  grid-template-columns: 400px 1fr;
+
+  aside {
+    height: 100vh;
+    grid-area: sidebar;
+  }
+
+  main {
+    grid-area: main;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dark-mode {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px;
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    height: 25vh;
+    width: 100%;
+    // display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
