@@ -11,6 +11,8 @@ import Teams from "./pages/Teams"
 import Tasks from "./pages/Tasks"
 import Notes from "./pages/Notes"
 import Calendary from "./pages/Calendary"
+import SignupForm from "./pages/Register";
+import LoginForm from "./pages/Login";
 // import Count from "../pages/Count"
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/calendary" element={<Calendary />} />
           <Route path="/count" element={<Auth />} />
+          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/login" element={<LoginForm />} />
         </Routes>
       </main>
       <footer>

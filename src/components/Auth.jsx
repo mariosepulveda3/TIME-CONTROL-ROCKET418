@@ -9,8 +9,8 @@ const Auth = () => {
     <div className="auth">
       <Tabs className="box-auth" isFitted variant="enclosed">
         <TabList mb="5em">
-          <Tab>Login</Tab>
-          <Tab>Register</Tab>
+          <Tab>Inicio de sesión</Tab>
+          <Tab>Registro</Tab>
         </TabList>
         <TabPanels className="box">
           <TabPanel>

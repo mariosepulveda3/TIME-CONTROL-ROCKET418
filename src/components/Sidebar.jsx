@@ -80,6 +80,12 @@ export default function Sidebar() {
         <Link to="/count">
           <NavItem navSize={navSize} icon={FiUser} title="Cuenta" />
         </Link>
+        <Link to="/signup">
+          <NavItem navSize={navSize} icon={FiUser} title="Registro" />
+        </Link>
+        <Link to="/login">
+          <NavItem navSize={navSize} icon={FiUser} title="Inicio de sesión" />
+        </Link>
       </Flex>
       <Flex
         p="5%"
