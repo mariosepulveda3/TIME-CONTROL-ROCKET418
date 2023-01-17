@@ -82,15 +82,17 @@ function LoginForm() {
             <Input
               id="email"
               type="email"
+              variant={'filled'}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </FormControl>
-          <FormControl>
+          <FormControl mb={6}>
             <FormLabel htmlFor="password">Contraseña</FormLabel>
             <Input
               id="password"
               type="password"
+              variant={'filled'}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

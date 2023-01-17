@@ -77,7 +77,7 @@ export default function Sidebar() {
         <Link to="/calendary">
           <NavItem navSize={navSize} icon={FiCalendar} title="Calendario" />
         </Link>
-        <Link to="/count">
+        <Link to="/account">
           <NavItem navSize={navSize} icon={FiUser} title="Cuenta" />
         </Link>
         <Link to="/signup">

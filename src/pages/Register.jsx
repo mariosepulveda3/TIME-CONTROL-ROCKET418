@@ -119,7 +119,7 @@ function SignupForm() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </FormControl>
-          <FormControl isRequired>
+          <FormControl isRequired mb={6}>
             <FormLabel htmlFor="confirmPassword">
               Confirmar contraseña
             </FormLabel>
