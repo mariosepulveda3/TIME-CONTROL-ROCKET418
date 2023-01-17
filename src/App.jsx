@@ -10,9 +10,9 @@ import Projects from "./pages/Projects";
 import Teams from "./pages/Teams";
 import Tasks from "./pages/Tasks";
 import Notes from "./pages/Notes";
-import Calendary from "./pages/Calendary";
 import SignupForm from "./pages/Register";
 import LoginForm from "./pages/Login";
+import MyCalendar from "./pages/MyCalendar";
 // import Count from "../pages/Count"
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
             <Route path="/teams" element={<Teams />} />
             <Route path="/tasks" element={<Tasks />} />
             <Route path="/notes" element={<Notes />} />
-            <Route path="/calendary" element={<Calendary />} />
+            <Route path="/calendary" element={<MyCalendar />} />
             <Route path="/account" element={<Auth />} />
             <Route path="/signup" element={<SignupForm />} />
             <Route path="/login" element={<LoginForm />} />
