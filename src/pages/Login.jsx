@@ -50,8 +50,11 @@ import {
   useColorModeValue,
   Flex,
   Heading,
+  Text,
+  Link,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -82,7 +85,7 @@ function LoginForm() {
             <Input
               id="email"
               type="email"
-              variant={'filled'}
+              variant={"filled"}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -92,11 +95,17 @@ function LoginForm() {
             <Input
               id="password"
               type="password"
-              variant={'filled'}
+              variant={"filled"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </FormControl>
+          <Text mb={6}>
+            ¿Aún no tienes cuenta?
+            <Link color="teal.500" fontWeight={"bold"}>
+              <NavLink to="/signup">Regístrate aquí</NavLink>
+            </Link>
+          </Text>
           <Button type="submit" isLoading={isSubmitting}>
             Iniciar sesión
           </Button>
