@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import {
   Flex,
   Heading,
@@ -40,4 +40,68 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login; */
+
+import {
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  useColorModeValue,
+  Flex,
+  Heading,
+} from "@chakra-ui/react";
+import { useState } from "react";
+
+function LoginForm() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formBackground = useColorModeValue("gray.100", "gray.700");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    // Enviar información al servidor para iniciar sesión
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <Flex h="100vh" alignItems={"center"} justifyContent="center">
+        <Flex
+          flexDir={"column"}
+          bg={formBackground}
+          p={8}
+          borderRadius={8}
+          boxShadow="lg"
+        >
+          <Heading pb={6}>Inicio de sesión</Heading>
+
+          <FormControl>
+            <FormLabel htmlFor="email">Email</FormLabel>
+            <Input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </FormControl>
+          <FormControl>
+            <FormLabel htmlFor="password">Contraseña</FormLabel>
+            <Input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </FormControl>
+          <Button type="submit" isLoading={isSubmitting}>
+            Iniciar sesión
+          </Button>
+        </Flex>
+      </Flex>
+    </form>
+  );
+}
+
+export default LoginForm;
