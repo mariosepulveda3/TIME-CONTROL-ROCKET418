@@ -39,7 +39,7 @@ function App() {
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/calendary" element={<Calendary />} />
-          <Route path="/count" element={<Auth />} />
+          <Route path="/account" element={<Auth />} />
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/login" element={<LoginForm />} />
         </Routes>
